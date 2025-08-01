@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+
 </head>
 <body>
+
+    <!-- header -->
     <header>
         <div class="left-header">
             <h1>Logo</h1>
         </div>
-        <div class="center-header"></div>
+        <div class="center-header">     
         <a href="#">Home</a>
         <div class="dropdown">
-            <button class="dropbtn">Dev Options</button>
+            <button class="dropbtn">Frontend <i id="dropdown" class="fa fa-caret-down"></i> </button>
             <div class="dropdown-content">
                 <a href="#">HTML</a>   
                 <a href="#">CSS</a>
@@ -23,7 +26,23 @@
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Learn</button>
+            <button class="dropbtn">Backend <i id="dropdown" class="fa fa-caret-down"></i> </button>
+            <div class="dropdown-content">
+                <a href="#">Node.js</a>   
+                <a href="#">Express.js</a>
+                <a href="#">MongoDB</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Dev Tools  <i id="dropdown" class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">VS Code</a>   
+                <a href="#">Git</a>
+                <a href="#">Github</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Learn <i id="dropdown" class="fa fa-caret-down"></i> </button>
             <div class="dropdown-content">
                 <a href="#">Frontend</a>   
                 <a href="#">Backend</a>
@@ -38,7 +57,26 @@
             <button class="signup">Sign Up</button>
         </div>
     </header>
-    <main>Main</main>
+
+
+    <!-- main -->
+    <main>
+        <div class="code-bg">
+            <h1 class="code"> <span><<</span> Learn To Code <span>>></span> </h1>
+        </div>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <br>
+        <div id="btn">
+            <button class="get-started">Get Started</button>
+        </div>
+        
+
+
+    </main>
+
+
+    <!-- aside -->
     <aside>
         <h2>Main Contain</h2>
         <div class="link">
@@ -52,7 +90,23 @@
             <a id="link1" href="#">Fourth Step</a>
             <a id="link1" href="#">Fifth Step</a>
         </div>
+        <div class="setting">
+            <i class="fa fa-cog"></i>
+            <h2>Setting</h2>
+        </div>
     </aside>
+
+
+    <!-- footer -->
     <footer>Footer</footer>
+
+    <script>
+        const dropdown = document.querySelector('#dropdown');
+        dropdown.addEventListener('mouseover', () => {
+            dropdown.classList.toggle('fa-caret-down');
+            dropdown.classList.toggle('fa-caret-up');
+        })
+
+    </script>
 </body>
 </html>
